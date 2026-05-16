@@ -1,0 +1,96 @@
+:root {
+  --bg: #eef1f6;
+  --surface: rgba(255, 255, 255, 0.76);
+  --surface-soft: rgba(255, 255, 255, 0.56);
+  --glass: rgba(255, 255, 255, 0.66);
+  --glass-border: rgba(255, 255, 255, 0.74);
+  --settings-window-bg: rgba(244, 247, 252, 0.78);
+  --settings-sidebar-bg: rgba(236, 241, 248, 0.62);
+  --control-bg: rgba(255, 255, 255, 0.76);
+  --control-focus-bg: rgba(255, 255, 255, 0.94);
+  --control-border: rgba(91, 104, 124, 0.22);
+  --text: #16191f;
+  --muted: #697386;
+  --accent: #0a84ff;
+  --focus: rgba(10, 132, 255, 0.16);
+  --danger: #ff3b30;
+  --button-text: #ffffff;
+  --panel-shadow: 0 26px 70px rgba(35, 42, 58, 0.14);
+  --soft-shadow: 0 16px 44px rgba(35, 42, 58, 0.1);
+  --sans:
+    -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Inter, ui-sans-serif,
+    system-ui, sans-serif;
+  --mono: 'SF Mono', 'Cascadia Code', 'SFMono-Regular', Consolas, monospace;
+
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(10, 132, 255, 0.13), transparent 32rem),
+    radial-gradient(circle at bottom right, rgba(52, 199, 89, 0.1), transparent 28rem),
+    var(--bg);
+  font-family: var(--sans);
+  font-synthesis: none;
+  line-height: 1.45;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111318;
+    --surface: rgba(28, 31, 38, 0.78);
+    --surface-soft: rgba(255, 255, 255, 0.06);
+    --glass: rgba(28, 31, 38, 0.68);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --settings-window-bg: rgba(21, 24, 30, 0.82);
+    --settings-sidebar-bg: rgba(255, 255, 255, 0.04);
+    --control-bg: rgba(255, 255, 255, 0.06);
+    --control-focus-bg: rgba(255, 255, 255, 0.1);
+    --control-border: rgba(255, 255, 255, 0.12);
+    --text: #f4f6fb;
+    --muted: #9aa4b5;
+    --accent: #64d2ff;
+    --focus: rgba(100, 210, 255, 0.15);
+    --danger: #ff6961;
+    --button-text: #101318;
+    --panel-shadow: 0 26px 70px rgba(0, 0, 0, 0.38);
+    --soft-shadow: 0 16px 44px rgba(0, 0, 0, 0.24);
+  }
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+html.floating-html,
+html.floating-html body,
+body.floating-body {
+  background: transparent;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  margin-top: 2px;
+  color: var(--text);
+  font-size: 30px;
+  font-weight: 760;
+  letter-spacing: 0;
+}
+
+h2 {
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 740;
+  letter-spacing: 0;
+}
