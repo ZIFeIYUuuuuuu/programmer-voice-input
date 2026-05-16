@@ -8,16 +8,16 @@
 
 Windows 安装包可在 [GitHub Releases](https://github.com/ZIFeIYUuuuuuu/programmer-voice-input/releases/latest) 下载。
 
-- 推荐普通用户下载 `Voice Input_0.1.0_x64-setup.exe`。
-- 需要 MSI 部署时下载 `Voice Input_0.1.0_x64_en-US.msi`。
+- 推荐普通用户下载 `Voice.Input_0.1.0_x64-setup.exe`。
+- 需要 MSI 部署时下载 `Voice.Input_0.1.0_x64_en-US.msi`。
 
 当前版本安装包未做代码签名，Windows SmartScreen 首次运行时可能提示风险。请只从本仓库 Releases 页面下载。
 
 SHA-256：
 
 ```text
-Voice Input_0.1.0_x64-setup.exe     7F9CBE81A508D0292C00C72E1AF0DB8853FDD35AA2FC27C28E5714238A7AFC95
-Voice Input_0.1.0_x64_en-US.msi     9FD34AE4B6D9299DC06688B0782D30A57A9EC2C75AD16A695048BC1F6CA26715
+Voice.Input_0.1.0_x64-setup.exe     7F9CBE81A508D0292C00C72E1AF0DB8853FDD35AA2FC27C28E5714238A7AFC95
+Voice.Input_0.1.0_x64_en-US.msi     9FD34AE4B6D9299DC06688B0782D30A57A9EC2C75AD16A695048BC1F6CA26715
 ```
 
 ## 功能
