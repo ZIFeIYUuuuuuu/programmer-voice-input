@@ -4,6 +4,35 @@
 
 应用默认只显示一个置顶悬浮 HUD。通过快捷键或按钮开始说话，实时显示识别文本，结束后按设置复制或自动粘贴到当前输入位置。
 
+## Architecture
+
+```mermaid
+flowchart LR
+  User["Programmer"] --> HUD["Tauri floating HUD"]
+  HUD --> Mic["Microphone stream"]
+  Mic --> ASR["DashScope realtime ASR"]
+  ASR --> Transcript["Partial / final transcript"]
+  Transcript --> Polish["Optional text polish"]
+  Polish --> Clipboard["Clipboard + Ctrl+V paste"]
+  HUD --> Settings["Local settings store"]
+```
+
+## Demo GIF
+
+![Demo GIF](docs/assets/demo.gif)
+
+## Portfolio Metrics
+
+Local demo targets and cost estimates; rerun before making production claims.
+
+| Metric | Current portfolio baseline | Measurement note |
+| --- | ---: | --- |
+| Latency | P50 first partial target `< 1.2s` | Realtime ASR path, microphone to visible transcript |
+| RAG hit rate | `N/A` | This project has no retrieval layer |
+| Agent success rate | `N/A` | Single-purpose ASR HUD, no agent planner |
+| Report generation time | `N/A` | No report generation workflow |
+| Cost | `~$0.001-$0.006 / minute` | ASR-only estimate, depends on provider pricing and model |
+
 ## 下载
 
 Windows 安装包可在 [GitHub Releases](https://github.com/ZIFeIYUuuuuuu/programmer-voice-input/releases/latest) 下载。
