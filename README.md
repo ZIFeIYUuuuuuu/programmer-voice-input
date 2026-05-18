@@ -4,7 +4,15 @@
 
 应用默认只显示一个置顶悬浮 HUD。通过快捷键或按钮开始说话，实时显示识别文本，结束后按设置复制或自动粘贴到当前输入位置。
 
-## Architecture
+## 双语概览 / Bilingual Overview
+
+| 中文 | English |
+| --- | --- |
+| 一个面向程序员的桌面语音输入工具，用悬浮 HUD 把口述内容快速转成 prompt、issue 或 review comment。 | A desktop voice-input tool for programmers that turns spoken notes into prompts, issues, or review comments through a floating HUD. |
+| 支持 DashScope 实时 ASR、可选文本润色、剪贴板复制和自动粘贴。 | Supports DashScope realtime ASR, optional text polishing, clipboard copy, and automatic paste. |
+| 设计重点是低延迟、低打扰、本地设置保存和隐私可控。 | The design focuses on low latency, low interruption, local settings, and privacy control. |
+
+## 架构 / Architecture
 
 ```mermaid
 flowchart LR
@@ -17,11 +25,13 @@ flowchart LR
   HUD --> Settings["Local settings store"]
 ```
 
-## Demo GIF
+## 演示 GIF / Demo GIF
 
 ![Demo GIF](docs/assets/demo.gif)
 
-## Portfolio Metrics
+## 指标 / Portfolio Metrics
+
+本地 demo 目标和成本估算；用于生产宣传前应重新测试。
 
 Local demo targets and cost estimates; rerun before making production claims.
 
